@@ -5,7 +5,7 @@
     use Silex\Provider\TwigServiceProvider;
     use Silex\Provider\ServiceControllerServiceProvider;
     use Silex\Provider\HttpFragmentServiceProvider;
-    use Corllete\SilexMongoDB\Provider\MongoDBServiceProvider;
+    //use Corllete\SilexMongoDB\Provider\MongoDBServiceProvider;
 
     $app->register(new ServiceControllerServiceProvider()); // Chargement des Controleur Provider
     $app->register(new AssetServiceProvider()); // Chargement de la gestion des Asset
