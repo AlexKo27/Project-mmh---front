@@ -29,7 +29,7 @@
     ));
 
     // connection uri: mongodb://localhost:27017
-    $app->register(new MongoDBServiceProvider());
+    //$app->register(new MongoDBServiceProvider());
 
     // $app->register(new MongoDBServiceProvider(), [
     //     'mongodb.options' => [
@@ -41,11 +41,11 @@
     //     ],
     // ]);
 
-    $app->register(new MongoDBServiceProvider(), [
-        'mongodb.options' => [
-            'uri' => 'mongodb://betawf3:betawf3@ds251727.mlab.com:51727/sitemmmhwf3'
-        ],
-    ]);
+    // $app->register(new MongoDBServiceProvider(), [
+    //     'mongodb.options' => [
+    //         'uri' => 'mongodb://betawf3:betawf3@ds251727.mlab.com:51727/sitemmmhwf3'
+    //     ],
+    // ]);
 
 /*
     // clés Amazon Web Services - à remplir avec les vraies clés -> VOIR index.php
