@@ -1,5 +1,14 @@
-/*
+/* nos propres styles */
 
-* Override Pages default styles or create your own styles here
+.login {
+    margin-top: 190px;
+}
 
-*/
+.card .card-block {
+    padding: 5px;
+}
+
+.spacing {
+    margin-right: 4%;
+    display: inline;
+}

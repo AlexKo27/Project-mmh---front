@@ -1,0 +1,28 @@
+{% extends "layout-login.html.twig" %}
+
+{% block title %}Connectez-vous à Mmmh!{% endblock %}
+
+{% block login_register %}Connectez-vous{% endblock %} 
+
+{% block formDashboard %}
+  <form id="form-login" method="POST" class="p-t-15" role="form" action="{{ path('login') }}">
+      <!-- EMAIL -->
+      <div class="form-group form-group-default">
+        <label>Adresse mail</label>
+        <div class="controls">
+          <input type="text" name="username" placeholder="nom@exemple.fr" class="form-control" required>
+        </div>
+      </div>
+      
+      <!-- MOT DE PASSE-->
+      <div class="form-group form-group-default">
+        <label>Mot de passe</label>
+        <div class="controls">
+          <input type="password" class="form-control" name="password" placeholder="Saissiez votre mot de passe" required>
+        </div>
+      </div>
+      
+      <!-- CONNEXION -->
+      <button class="btn btn-primary btn-cons m-t-10" type="submit" >Connexion</button>
+    </form>                      
+{% endblock %}
